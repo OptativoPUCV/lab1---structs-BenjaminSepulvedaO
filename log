@@ -210,3 +210,13 @@ Thu 14 Mar 2024 11:11:57 PM UTC:
  tests:  0|0
 total_score: 30/70
 4333663
+Thu 14 Mar 2024 11:12:19 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:31: error: expected expression before ‘)’ token
+   78 |       if (arr1[i] < arr2[j] &&)
+      |                               ^
+Compilation failed
+b5bf174
