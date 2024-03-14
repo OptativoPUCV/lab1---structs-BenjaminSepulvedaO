@@ -75,17 +75,17 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
   int i = 0, j = 0, k = 0;
   while (k < (size1 + size2) && i < size1 && j < size2)
     {
-      if (arr1[i] < arr2[j] && result[k - 1] < arr1[i])
+      if (arr1[i] < arr2[j] && result[k] < arr1[i])
       {
         result[k] = arr1[i];
         i++;
       }
-      else if (arr1[i] > arr2[j] && result[k - 1] < arr2[j])
+      else if (arr1[i] > arr2[j] && result[k] < arr2[j]) //k - 1?
       {
         result[k] = arr2[j];
         j++;
       }
-      else if (arr1[i] == arr2[j] && result[k - 1] < arr1[i])
+      else if (arr1[i] == arr2[j] && result[k] < arr1[i])
       {
         result[k] = arr1[i];
         i++;
@@ -119,7 +119,10 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
-int checkSorted(int arr[], int size) { return -2; }
+int checkSorted(int arr[], int size) { 
+  //for(int i = 1; i < size; i++)
+  return -2; 
+}
 
 /*
 Ejercicio 6: Información de una Biblioteca
@@ -141,7 +144,12 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) {
+  strcpy(libro->titulo, titulo);
+  strcpy(libro->autor.nombre, nombreAutor);
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
