@@ -159,3 +159,18 @@ Thu 14 Mar 2024 11:04:08 PM UTC:
  tests:  0|4
 total_score: 30/70
 1685837
+Thu 14 Mar 2024 11:06:46 PM UTC: 
+ exercises.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:96:21: error: expected ‘)’ before ‘!’ token
+   96 |   if (i < size1 && j !< size2)
+      |      ~              ^~
+      |                     )
+exercises.c:105:21: error: expected ‘)’ before ‘!’ token
+  105 |   if (j < size2 && i !< size1)
+      |      ~              ^~
+      |                     )
+Compilation failed
+4c32ac9
