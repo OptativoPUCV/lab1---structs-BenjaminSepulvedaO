@@ -11,3 +11,14 @@ Thu 14 Mar 2024 08:36:47 PM UTC:
  tests:  0|5
 total_score: 20/70
 d1e4b2b
+Thu 14 Mar 2024 08:44:45 PM UTC: 
+ exercises.c | 22 ++++++++++++++++++++--
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:20: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   60 |           nuevaArr = arr[i];
+      |                    ^
+cc1: all warnings being treated as errors
+Compilation failed
+7ce7ce8
