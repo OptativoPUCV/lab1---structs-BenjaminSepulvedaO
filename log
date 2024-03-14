@@ -174,3 +174,9 @@ exercises.c:105:21: error: expected ‘)’ before ‘!’ token
       |                     )
 Compilation failed
 4c32ac9
+Thu 14 Mar 2024 11:07:19 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+b39cd90
