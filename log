@@ -93,3 +93,23 @@ exercises.c:65:10: error: ‘nuevaArr’ may be used uninitialized in this funct
 cc1: all warnings being treated as errors
 Compilation failed
 e221a49
+Thu 14 Mar 2024 09:19:05 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:7: error: array size missing in ‘nuevaArr’
+   47 |   int nuevaArr[];
+      |       ^~~~~~~~
+exercises.c:54:20: error: assignment to expression with array type
+   54 |           nuevaArr = (int *)malloc(sizeof(int));
+      |                    ^
+exercises.c:59:20: error: assignment to expression with array type
+   59 |           nuevaArr = (int *)realloc(nuevaArr, (*newSize) * sizeof(int));
+      |                    ^
+exercises.c:65:10: error: function returns address of local variable [-Werror=return-local-addr]
+   65 |   return nuevaArr;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+40a6757
