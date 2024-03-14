@@ -274,3 +274,9 @@ exercises.c:130:15: error: ‘orden’ may be used uninitialized in this functio
 cc1: all warnings being treated as errors
 Compilation failed
 d5634d8
+Thu 14 Mar 2024 11:54:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|2
+total_score: 50/70
+b24a418
