@@ -121,7 +121,6 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
   int orden;
-  if (size == 1) return 1;
   if (arr[0] < arr[1]) orden = 1;
   else orden = -1;
   for(int i = 2; i < size; i++)
