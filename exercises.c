@@ -73,15 +73,15 @@ arreglos en un tercer arreglo también ordenado de menor a mayor.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) {
   int i = 0, j = 0, k = 0;
-  int numAnterior = -1;
+  //int numAnterior = -1;
   while (i < size1 && j < size2)
     {
-      if (arr1[i] <= arr2[j] && arr1[i] > numAnterior)
+      if (arr1[i] <= arr2[j])
       {
         result[k] = arr1[i];
         i++;
       }
-      else if (arr1[i] > arr2[j] && arr2[j] > numAnterior)
+      else if (arr1[i] > arr2[j])
       {
         result[k] = arr2[j];
         j++;
@@ -92,7 +92,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
         i++;
         j++;
       }*/
-      numAnterior = result[k];
+      //numAnterior = result[k];
       k++;
     }
   while (i < size1)
