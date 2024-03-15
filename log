@@ -310,3 +310,12 @@ Fri 15 Mar 2024 12:01:22 AM UTC:
  tests:  0|2
 total_score: 50/70
 99558fb
+Fri 15 Mar 2024 12:07:28 AM UTC: 
+ exercises.c | 29 +++++++++++++++++++++--------
+ 1 file changed, 21 insertions(+), 8 deletions(-)
+Fri 15 Mar 2024 12:07:39 AM UTC: 
+ exercises.c | 30 ++++++++++++++++++++++--------
+ 1 file changed, 22 insertions(+), 8 deletions(-)
+ tests:  0|1
+total_score: 60/70
+ffa4d12
